@@ -40,7 +40,7 @@ func main() {
 
 func AllPenduduk(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -71,7 +71,7 @@ func AllPenduduk(w http.ResponseWriter, r *http.Request){
 }
 func Indonesia(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -102,7 +102,7 @@ func Indonesia(w http.ResponseWriter, r *http.Request){
 }
 func Perempuan(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -133,7 +133,7 @@ func Perempuan(w http.ResponseWriter, r *http.Request){
 }
 func LakiLaki(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -164,7 +164,7 @@ func LakiLaki(w http.ResponseWriter, r *http.Request){
 }
 func Islam(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -195,7 +195,7 @@ func Islam(w http.ResponseWriter, r *http.Request){
 }
 func Hindu(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -226,7 +226,7 @@ func Hindu(w http.ResponseWriter, r *http.Request){
 }
 func Buddha(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -257,7 +257,7 @@ func Buddha(w http.ResponseWriter, r *http.Request){
 }
 func Kristen(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -288,7 +288,7 @@ func Kristen(w http.ResponseWriter, r *http.Request){
 }
 func Katholik(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -319,7 +319,7 @@ func Katholik(w http.ResponseWriter, r *http.Request){
 }
 func WorkingPlace(w http.ResponseWriter, r *http.Request){
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+	db, err := sql.Open("mysql", "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
@@ -379,7 +379,7 @@ func GetAllWorkingPlace(w http.ResponseWriter, r *http.Request) {
 func GetWorkingPlace(w http.ResponseWriter, r *http.Request, id string) {
         myid :=(id)
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -421,7 +421,7 @@ func GetPostDataWorkingPlace(w http.ResponseWriter, r *http.Request) {
 
 func GetAllWorkingPlaceNIK(w http.ResponseWriter, r *http.Request) {
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -450,7 +450,7 @@ func GetAllWorkingPlaceNIK(w http.ResponseWriter, r *http.Request) {
 func GetWorkingPlaceNIK(w http.ResponseWriter, r *http.Request, id string) {
         myid :=(id)
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -493,7 +493,7 @@ func GetPostDataWorkingPlaceNIK(w http.ResponseWriter, r *http.Request) {
 
 func GetAllPendudukNIK(w http.ResponseWriter, r *http.Request) {
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -522,7 +522,7 @@ func GetAllPendudukNIK(w http.ResponseWriter, r *http.Request) {
 func GetPendudukNIK(w http.ResponseWriter, r *http.Request, id string) {
         myid :=(id)
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -564,7 +564,7 @@ func GetPostDataPendudukNIK(w http.ResponseWriter, r *http.Request) {
 
 func GetAllPenduduk(w http.ResponseWriter, r *http.Request) {
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
@@ -593,7 +593,7 @@ func GetAllPenduduk(w http.ResponseWriter, r *http.Request) {
 func GetPenduduk(w http.ResponseWriter, r *http.Request, id string) {
         myid :=(id)
         db, err := sql.Open("mysql",
-                "root:@tcp(127.0.0.1:3306)/penduduk_bandung")
+                "root:@tcp(167.205.67.251:3306)/penduduk_bandung")
 
         if err != nil {
                 log.Fatal(err)
